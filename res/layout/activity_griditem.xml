@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridrootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/aboutusbg" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueappcolor" >
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrowclose" />
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/demobutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="70dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/logoutbutton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="50dp" >
+
+        <ImageView
+            android:id="@+id/basepic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blueappcolor" >
+    </RelativeLayout>
+
+</RelativeLayout>

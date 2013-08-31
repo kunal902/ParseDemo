@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/aboutusbg" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/custom_menu_selector"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/menu" />
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/demobutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="70dp"
+            android:background="@color/blueappcolor"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/logoutbutton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+    </RelativeLayout>
+
+     <com.iglulabs.assets.CustomScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/timelineview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ListView
+                android:id="@+id/list_view_left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:scrollbars="none" />
+
+            <ListView
+                android:id="@+id/list_view_middle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="none" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/list_view_right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </com.iglulabs.assets.CustomScrollView>
+
+</RelativeLayout>

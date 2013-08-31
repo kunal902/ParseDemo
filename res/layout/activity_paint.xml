@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/aboutusbg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true" >
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/demobutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="70dp"
+            android:background="@color/blueappcolor"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/logoutbutton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/camerabutton"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_menu_selector"
+            android:text="TAKE A PICTURE"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/gallerybutton"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/camerabutton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_menu_selector"
+            android:text="CHOOSE A PHOTO"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/timelinebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/gallerybutton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_menu_selector"
+            android:text="VIEW TIMELINE"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blueappcolor" />
+
+</RelativeLayout>

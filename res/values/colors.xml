@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="appcolor">#FF119087</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blueappcolor">#0782cf</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="selector_color">#e3f4ff</color>
+
+</resources>

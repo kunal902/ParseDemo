@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/change_paint_id"
+        android:title="Change Paint"
+        android:titleCondensed="Paint">
+        <menu>
+            <item
+                android:id="@+id/p_white_id"
+                android:title="White"
+                android:titleCondensed="White">
+            </item>
+            <item
+                android:id="@+id/p_blue_id"
+                android:title="Blue"
+                android:titleCondensed="Blue">
+            </item>
+            <item
+                android:id="@+id/p_green_id"
+                android:title="Green"
+                android:titleCondensed="Green">
+            </item>
+            <item
+                android:id="@+id/p_red_id"
+                android:title="Red"
+                android:titleCondensed="Red">
+            </item>
+            <item
+                android:id="@+id/p_black_id"
+                android:title="Black"
+                android:titleCondensed="Black">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/change_width_id"
+        android:title="Change Width"
+        android:titleCondensed="Width">
+        <menu>
+            <item
+                android:id="@+id/w_small"
+                android:title="Small"
+                android:titleCondensed="S">
+            </item>
+            <item
+                android:id="@+id/w_medium"
+                android:title="Medium"
+                android:titleCondensed="M">
+            </item>
+            <item
+                android:id="@+id/w_large"
+                android:title="Large"
+                android:titleCondensed="L">
+            </item>
+        </menu>
+    </item>
+
+</menu>

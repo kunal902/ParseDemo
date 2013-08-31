@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/aboutusbg" >
+
+    <com.iglulabs.assets.CustomFontButton
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+        android:id="@+id/demobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueappcolor"
+        android:gravity="center"
+        android:text="Demo App"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/usertextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="User Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontEditText
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/txtUname"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/usertextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="User Name"
+            text_namespace:typeface="MyriadPro.otf" />
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/passtextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUname"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontEditText
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/txtpassword"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/passtextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="password"
+            android:password="true"
+            text_namespace:typeface="MyriadPro.otf" />
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/errortext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro.otf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/okbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/errortext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Login using parse"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/okbutton" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blueappcolor" />
+
+</RelativeLayout>

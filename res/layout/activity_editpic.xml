@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/editrootview" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/custom_menu_selector"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/menu" />
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/demobutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="70dp"
+            android:background="@color/blueappcolor"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/logoutbutton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="50dp" >
+
+        <com.iglulabs.parsedemo.PaintView
+            android:id="@+id/basepic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+        </com.iglulabs.parsedemo.PaintView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blueappcolor" >
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/savebutton"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="70dp"
+            android:background="@color/blueappcolor"
+            android:gravity="center"
+            android:text="Draw using touch"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+
+        <com.iglulabs.assets.CustomFontButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_namespace="http://schemas.android.com/apk/res/com.iglulabs.parsedemo"
+            android:id="@+id/refreshbutton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_menu_selector"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            text_namespace:typeface="MyriadPro-Bold_Condensed.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout>
